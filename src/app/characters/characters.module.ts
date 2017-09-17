@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { CharactersRoutingModule } from './characters-routing.module';
 import { CharactersComponent } from './characters/characters.component';
+import { AlertModule } from 'ngx-bootstrap';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    CharactersRoutingModule
+    CharactersRoutingModule,
+    AlertModule.forRoot()
   ],
   declarations: [CharactersComponent]
 })
